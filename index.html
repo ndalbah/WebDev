@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah Laval</title>
+    <link rel="Stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Laval</h1>
+        <h4>Welcome to Laval</h4>
+    </div>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="Maxi.html">Maxi</a>
+        <a href="cinema.html">Cinema</a>
+        <a href="LavalCollege.html">College</a>
+        <a href="Metro Plus.html">Metro</a>
+        <a href="Costco.html">Costco</a>
+        <a href="Constructions.html">Construction</a>
+
+    </div>
+    <div class="flex-container">
+        <div class="main-content">
+            <div class="tabcontent" id="Area1">
+                <h3>Maxi & Cie</h3>
+                <p>Add Description</p>
+            </div>
+            <div class="tabcontent" id="Area2">
+                <h3>Metro Plus Messier Auteuil</h3>
+                <p>pppppppppppppppppp</p>
+            </div>
+            <div class="tabcontent" id="Area3">
+                <h3>Cinema Guzzo Laval</h3>
+                <p>ppppppppppppppppppp</p>
+            </div>
+            <div class="tabcontent" id="Area4">
+                <h3>College Laval</h3>
+                <p>ppppppppppppppppppp</p>
+            </div>
+            <div class="tabcontent" id="Area5">
+                <h3>Costco</h3>
+                <p>ppppppppppppppppppp</p>
+            </div>
+            <div class="tabcontent" id="Area6">
+                <h3>Constructions Albec Inc</h3>
+                <p>pppppppppppppppppp</p>
+            </div>
+        </div>
+        <div class="sidebar">
+            <img src="LavalMap.png" usemap="#laval">
+            <map name="laval">
+                <area shape="rect" coords="755,425,782,466" title="Maxi" onmouseover="openDescription(event, 'Area1')">
+                <area shape="rect" coords="731,385,759,427" title="Metro" onmouseover="openDescription(event, 'Area2')">
+                <area shape="rect" coords="824,489,853,541" title="Cinema" onmouseover="openDescription(event, 'Area3')">
+                <area shape="rect" coords="915,395,937,443" title="College" onmouseover="openDescription(event, 'Area4')">
+                <area shape="circle" coords="727,518,28" title="Costco" onmouseover="openDescription(event, 'Area5')">
+                <area shape="poly" coords="878,418 852,422 842,397 867,382 887,399" title="Construction" onmouseover="openDescription(event, 'Area6')">
+            </map>
+        </div>
+    </div>
+    <div class="footer">
+        <h4>Web page developed by Noah Dalbah</h4>
+    </div>
+    </div>
+</body>
+<script>
+   function openDescription(evt, Area) {
+        var i, tabcontent;
+        tabcontent = document.getElementsByClassName("tabcontent");
+      for(i=0;i<tabcontent.length;i++){
+        tabcontent[i].style.display = "none";
+      }
+      document.getElementById(Area).style.display = "block";
+      evt.currentTarget.className += "active";
+    }
+</script>
+</html>

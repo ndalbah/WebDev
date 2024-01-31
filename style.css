@@ -1,0 +1,81 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+}
+
+.nav{
+    background-color: rgb(46, 124, 136);
+    padding: 15px;
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+    border: 1em;
+}
+
+.nav a{
+    
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    padding-inline:30px;
+  
+}
+
+.nav a:hover{
+    background-color: rgb(59, 87, 110);
+    color: white;
+    display: inline-block;
+    height: 40px;
+    padding: 15px;
+    padding-inline:40px;
+    
+}
+
+.flex-container
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.flex-container>.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    text-align: center;
+    background-color: rgb(46, 124, 136);
+    color: white;
+    padding: 15px;
+}
+
+.sidebar{
+    display: flex;
+    float: right;
+}
+.tabcontent {
+    display: none;
+    float: left;
+    padding: 12px;
+    border: 1px solid #ccc;
+    width: 60%;
+    height: 200px;}
+    .tab button.active {
+        background-color: #ccc;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }    
+
+.flex-container>.map{
+    flex-direction: row;
+  
+}
